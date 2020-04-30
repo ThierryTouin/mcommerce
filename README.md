@@ -5,6 +5,18 @@ https://openclassrooms.com/fr/courses/4668216-optimisez-votre-architecture-micro
 
 ## Start a module
 
+- Module Config Server
+```
+mvn clean package -Dmaven.test.skip=true
+java -jar target/config-server-0.0.1-SNAPSHOT.jar
+```
+
+- Module Eureka Server
+```
+mvn clean package -Dmaven.test.skip=true
+java -jar target/eureka-server-0.0.1-SNAPSHOT.jar
+```
+
 - Module Produit
 ```
 mvn clean package -Dmaven.test.skip=true
@@ -28,21 +40,25 @@ mvn clean package -Dmaven.test.skip=true
 java -jar ./target/clientui-0.0.1-SNAPSHOT.jar
 ```
 
-- Module Config Server
-```
-mvn clean package -Dmaven.test.skip=true
-java -jar target/config-server-0.0.1-SNAPSHOT.jar
-```
 
-Test : http://localhost:9101/microservice-produits/default
+Récupérer config from  : 
+ : 
 
 ### Application Accès
 
 http://localhost:8080/
+
+| Description      |  URL  |
+| ------------- | ------------- | 
+| Spring Server | http://localhost:9101/microservice-produits/default | 
+| Console Eureka  | http://localhost:9102/ | 
+
+
 
 ### Ordre des Branches 
 1. SqueletteClient
 2. TestBranch
 3. ClientEtMSCommuniquant
 4. ExternalisationConfig
+5. Eureka
 
