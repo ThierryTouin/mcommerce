@@ -61,4 +61,6 @@ http://localhost:8080/
 3. ClientEtMSCommuniquant
 4. ExternalisationConfig
 5. Eureka
+6. Ribbon
+
 
