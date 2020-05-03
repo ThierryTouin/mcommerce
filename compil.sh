@@ -18,5 +18,9 @@ cd ..
 cd eureka-server
 mvn clean package -Dmaven.test.skip=true
 cd ..
+cd zuul-server
+mvn clean package -Dmaven.test.skip=true
+cd ..
+
 
 

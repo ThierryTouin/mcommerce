@@ -62,5 +62,7 @@ http://localhost:8080/
 4. ExternalisationConfig
 5. Eureka
 6. Ribbon
+7. ZUUL
+
 
 
