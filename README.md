@@ -52,8 +52,13 @@ http://localhost:8080/
 | ------------- | ------------- | 
 | Spring Server | http://localhost:9101/microservice-produits/default | 
 | Console Eureka  | http://localhost:9102/ | 
+| Accès produit via ZUUL | http://localhost:9004/microservice-produits/Produits |
 
+### zipkin
 
+https://repo1.maven.org/maven2/io/zipkin/java/zipkin-server/2.6.1/zipkin-server-2.6.1-exec.jar
+java -jar zipkin-server-2.6.1-exec.jar
+http://localhost:9411/zipkin/
 
 ### Ordre des Branches 
 1. SqueletteClient
@@ -63,6 +68,8 @@ http://localhost:8080/
 5. Eureka
 6. Ribbon
 7. ZUUL
+8. SecurityEtSleuth
+
 
 
 
