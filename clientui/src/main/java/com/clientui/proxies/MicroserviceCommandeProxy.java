@@ -7,7 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(contextId = "microservice-commandes",name = "zuul-server")
+//@FeignClient(contextId = "microservice-commandes",name = "zuul-server")
+@FeignClient(name = "microservice-commandes")
 @RibbonClient(name = "microservice-commandes")
 public interface MicroserviceCommandeProxy {
 
