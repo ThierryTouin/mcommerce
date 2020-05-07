@@ -7,7 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(contextId = "microservice-paiement",name = "zuul-server")
+//@FeignClient(contextId = "microservice-paiement",name = "zuul-server")
+@FeignClient(name = "microservice-paiement")
 @RibbonClient(name = "microservice-paiement")
 public interface MicroservicePaiementProxy {
 
