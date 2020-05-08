@@ -21,6 +21,9 @@ cd ..
 cd zuul-server
 mvn clean package -Dmaven.test.skip=true
 cd ..
+cd springadmin
+mvn clean package -Dmaven.test.skip=true
+cd ..
 
 
 

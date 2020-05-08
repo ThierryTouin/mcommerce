@@ -8,64 +8,25 @@ https://openclassrooms.com/fr/courses/4668216-optimisez-votre-architecture-micro
 ./compli.sh
 ```
 
-## Start a module
+## Start application in order
 
-- Module Config Server
-```
-mvn clean package -Dmaven.test.skip=true
-java -jar target/config-server-0.0.1-SNAPSHOT.jar
-```
-
-- Module Eureka Server
-```
-mvn clean package -Dmaven.test.skip=true
-java -jar target/eureka-server-0.0.1-SNAPSHOT.jar
-```
-
-- Module ZipKin
-```
-java -jar zipkin-server-2.6.1-exec.jar
-```
-
-- Module ZUUL
-```
-mvn clean package -Dmaven.test.skip=true
-java -jar ./target/zuul-0.0.1-SNAPSHOT.jar
-```
-
-- Module Produit
-```
-mvn clean package -Dmaven.test.skip=true
-java -jar ./target/mproduits-0.0.1-SNAPSHOT.jar
-```
-
-- Module Commande
-```
-mvn clean package -Dmaven.test.skip=true
-java -jar target/mcommandes-0.0.1-SNAPSHOT.jar
-```
-- Module Paiement
-```
-mvn clean package -Dmaven.test.skip=true
-java -jar target/mpaiement-0.0.1-SNAPSHOT.jar
-```
-
-- Module Client
-```
-mvn clean package -Dmaven.test.skip=true
-java -jar ./target/clientui-0.0.1-SNAPSHOT.jar
-```
-
-
-
+| Name      |  Port  | Script | URL
+| ------------- | ------------- | ------------- | ------------- | 
+| Config | 9101 | _config-server.sh |  | 
+| Eureka | 9102 | _eureka-server.sh | http://localhost:9102/ | 
+| ZipKin | 9411 | _zipkin-server.sh | http://localhost:9411/zipkin/ | 
+| ZUUL | 9004 | _zuul-server.sh |  | 
+| Admin | 9105 | _admin-server.sh | http://localhost:9105/ | 
+| Produit 1 | 9001 | _mproduit_9001.sh |  | 
+| Produit 2 | 9011 | _mproduit_9011.sh |  | 
+| Commande | 9002 | _mcommandes.sh |  | 
+| Paiement | 9003 | _mpaiement.sh |  | 
+| Client UI | 8080 | _clientui.sh | http://localhost:8080/ | 
 
 
 | Description      |  URL  |
 | ------------- | ------------- | 
-| Accès application (clintui) | http://localhost:8080/ | 
-| Console Eureka  | http://localhost:9102/ | 
 | Spring Server | http://localhost:9101/microservice-produits/default | 
-| Zipkin  | http://localhost:9411/zipkin/ | 
 | Zipkin (repo)  | https://repo1.maven.org/maven2/io/zipkin/java/zipkin-server/2.6.1/zipkin-server-2.6.1-exec.jar | 
 
 
@@ -93,6 +54,7 @@ java -jar ./target/clientui-0.0.1-SNAPSHOT.jar
 08. SecurityEtSleuth
 09. Zipkin
 10. SpringAdmin
+11. springadmin
 
 
 
