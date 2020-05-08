@@ -66,21 +66,33 @@ java -jar ./target/clientui-0.0.1-SNAPSHOT.jar
 | Console Eureka  | http://localhost:9102/ | 
 | Spring Server | http://localhost:9101/microservice-produits/default | 
 | Zipkin  | http://localhost:9411/zipkin/ | 
-| Accès produit via ZUUL | http://localhost:9004/microservice-produits/Produits |
 | Zipkin (repo)  | https://repo1.maven.org/maven2/io/zipkin/java/zipkin-server/2.6.1/zipkin-server-2.6.1-exec.jar | 
 
 
+| Micro-Service Produit |  URL  |
+| ------------- | ------------- | 
+| Accès Via ZUUL | http://localhost:9004/microservice-produits/Produits |
+| Console H2 | http://localhost:9001/h2-console |
+| Actuator | http://localhost:9001/actuator | 
+| Health  | http://localhost:9001/actuator/health | 
+| Metrics | http://localhost:9001/actuator/metrics | 
+| http.server.requests | http://localhost:9001/actuator/metrics/http.server.requests | 
+| Beans | http://localhost:9001/actuator/beans | 
+| Env | http://localhost:9001/actuator/env | 
+| Info | http://localhost:9001/actuator/info | 
+
 
 ### Ordre des Branches 
-1. SqueletteClient
-2. TestBranch
-3. ClientEtMSCommuniquant
-4. ExternalisationConfig
-5. Eureka
-6. Ribbon
-7. ZUUL
-8. SecurityEtSleuth
-9. Zipkin
+01. SqueletteClient
+02. TestBranch
+03. ClientEtMSCommuniquant
+04. ExternalisationConfig
+05. Eureka
+06. Ribbon
+07. ZUUL
+08. SecurityEtSleuth
+09. Zipkin
+10. SpringAdmin
 
 
 
