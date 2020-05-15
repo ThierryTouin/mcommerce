@@ -97,6 +97,20 @@ public class ClientController {
         return "Paiement";
     }
 
+    @RequestMapping("/testmicro/{id}")
+    //@RequestMapping(value = "/commander-produit/{idProduit}/{montant}")
+    public String testMicro(@PathVariable int idProduit, @PathVariable Double montant,  Model model){
+
+
+        //ProductBean produit = ProduitsProxy.recupererUnProduit(id);
+
+        CommandesProxy.testMicro(idProduit);
+
+        //return String.valueOf(idProduit);
+        return "Paiement";
+    }
+
+
     /*
     * Étape (5)
     * Opération qui fait appel au microservice de paiement pour traiter un paiement
@@ -129,4 +143,8 @@ public class ClientController {
 
         return ThreadLocalRandom.current().nextLong(1000000000000000L,9000000000000000L );
     }
+
+
+
+
 }

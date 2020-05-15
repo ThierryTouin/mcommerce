@@ -32,6 +32,7 @@ https://openclassrooms.com/fr/courses/4668216-optimisez-votre-architecture-micro
 
 | Micro-Service Produit |  URL  |
 | ------------- | ------------- | 
+| GET a Produit | http://localhost:8080/details-produit/1  |
 | Accès Via ZUUL | http://localhost:9004/microservice-produits/Produits |
 | Console H2 | http://localhost:9001/h2-console |
 | Actuator | http://localhost:9001/actuator | 

@@ -1,6 +1,7 @@
 package com.clientui.proxies;
 
 import com.clientui.beans.ProductBean;
+import com.clientui.configuration.FeignConfig;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 import java.util.Optional;
 
-@FeignClient(contextId = "microservice-produits",name = "zuul-server")
+@FeignClient(contextId = "microservice-produits",name = "zuul-server")//, configuration = FeignConfig.class)
 @RibbonClient(name = "microservice-produits")
 public interface MicroserviceProduitsProxy {
 

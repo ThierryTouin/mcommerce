@@ -48,4 +48,12 @@ public class CommandeController {
 
         commandesDao.save(commande);
     }
+
+    @GetMapping( value = "/testmicro/{id}")
+    public String testmicro(@PathVariable int id){
+
+        System.out.println("commande ok, testMicro");
+
+        return "commandes ok";
+    }
 }

@@ -1,5 +1,6 @@
 package com.clientui.configuration;
 
+import feign.Logger;
 import feign.auth.BasicAuthRequestInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +9,13 @@ import org.springframework.context.annotation.Configuration;
 public class FeignConfig {
 
     @Bean
+    Logger.Level feignLoggerLevel() {
+        return Logger.Level.FULL;
+    }
+
+    @Bean
     public BasicAuthRequestInterceptor mBasicAuthRequestInterceptor(){
+        //return  new BasicAuthRequestInterceptor("utilisateur", "mdp_ko");
         return  new BasicAuthRequestInterceptor("utilisateur", "mdp");
     }
 
