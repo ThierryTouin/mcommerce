@@ -1,7 +1,30 @@
 # mcommerce
 Application très basique pour le cours de l'architecture Microservices
 
+A partir du cours suivant :
 https://openclassrooms.com/fr/courses/4668216-optimisez-votre-architecture-microservices/5176135-creez-les-microservices-e-commerce-et-leur-client
+
+NB : les schemas proviennent du cours en ligne.
+
+### Use case
+
+![Use Case](./resources/use-case.png)
+
+### Edge service
+
+![Edge Service](./resources/schema.png)
+
+### Config server
+
+![Config Server](./resources/config-server.png)
+
+### Eureka server
+
+![Eureka Server](./resources/eureka.png)
+
+### ZUUL server
+
+![ZUUL Server](./resources/ZUUL.png)
 
 ## Compilation
 ```
