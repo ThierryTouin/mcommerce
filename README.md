@@ -6,31 +6,38 @@ https://openclassrooms.com/fr/courses/4668216-optimisez-votre-architecture-micro
 
 NB : les schemas proviennent du cours en ligne.
 
-### Use case
+
+## Use case
 
 ![Use Case](./resources/use-case.png)
 
-### Edge service
+---
+## Edge service
 
 ![Edge Service](./resources/schema.png)
 
-### Config server
+---
+## Config server
 
 ![Config Server](./resources/config-server.png)
 
-### Eureka server
+---
+## Eureka server
 
 ![Eureka Server](./resources/eureka.png)
 
-### ZUUL server
+---
+## ZUUL server
 
 ![ZUUL Server](./resources/ZUUL.png)
 
+---
 ## Compilation
 ```
 ./compli.sh
 ```
 
+---
 ## Start application in order
 
 | Name      |  Port  | Script | URL
