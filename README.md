@@ -11,33 +11,33 @@ NB : les schemas proviennent du cours en ligne.
 
 ![Use Case](./resources/use-case.png)
 
----
+
 ## Edge service
 
 ![Edge Service](./resources/schema.png)
 
----
+
 ## Config server
 
 ![Config Server](./resources/config-server.png)
 
----
+
 ## Eureka server
 
 ![Eureka Server](./resources/eureka.png)
 
----
+
 ## ZUUL server
 
 ![ZUUL Server](./resources/ZUUL.png)
 
----
+
 ## Compilation
 ```
 ./compli.sh
 ```
 
----
+
 ## Start application in order
 
 | Name      |  Port  | Script | URL
